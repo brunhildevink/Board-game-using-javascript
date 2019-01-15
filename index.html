@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="master.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+    </script>
+  </head>
+  <body>
+
+  <div class="wrapper">
+    <div id="music-wrapper">
+      <div id="mute-button">
+        <img src="sprites/unmute.png">
+      </div>
+      <div id="unmute-button">
+        <img src="sprites/mute.png">
+      </div>
+    </div>
+
+    <!--=== Player 1 ===-->
+    <div class="bar left-bar">
+      <h1 class="player_01-name">Rilakkuma</h1>
+      <div class="player-image left"></div>
+      <img src="sprites/props/health.png" class="health-icon">
+      <h2 class="player_01-health">Health: 100</h2><br>
+      <img src="sprites/props/attack-icon.png" class="attack-icon">
+      <h2 class="player_01-weapon">Damage: 10</h2>
+      <div class="healthbar-wrapper">
+        <div class="w3-light-grey w3-round-xlarge health-bar">
+          <div class="w3-container w3-round-xlarge w3-blue" id="player_01-health-bar" style="width:100%">100%</div>
+        </div>
+      </div>
+      <button id="player_01-fight-button" class="invisible attack">attack</button>
+      <button id="player_01-defend-button" class="invisible defend">defend</button>
+    </div>
+
+    <!--=== Tile game ===-->
+    <div class="container-map">
+      <!-- Tiles go here -->
+    </div>
+
+    <!--=== Player 2 ===-->
+    <div class="bar right-bar">
+      <h1 class="player_02-name">Kiiroitori</h1>
+      <div class="player-image right"><h3></h3></div>
+      <img src="sprites/props/health.png" class="health-icon">
+      <h2 class="player_02-health">Health: 100</h2><br>
+      <img src="sprites/props/attack-icon.png" class="attack-icon">
+      <h2 class="player_02-weapon">Damage: 10</h2>
+      <div class="healthbar-wrapper">
+        <div class="w3-light-grey w3-round-xlarge health-bar">
+          <div class="w3-container w3-round-xlarge w3-blue" id="player_02-health-bar" style="width:100%">100%</div>
+        </div>
+      </div>
+      <button id="player_02-fight-button" class="invisible attack">attack</button>
+      <button id="player_02-defend-button" class="invisible defend">defend</button>
+    </div>
+
+    <h1 id="victory-message" class="invisible"></h1>
+
+  </div>
+
+  <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
