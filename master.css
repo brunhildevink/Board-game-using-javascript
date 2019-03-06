@@ -1,17 +1,33 @@
-
 /*--Main styles --*/
+
+@font-face { font-family: corp; src: url('font/corp_round_v1.ttf'); }
 
 body {
   font-weight: 400;
   color: #393e46;
-  max-width: 100vw;
+  width: 100vw;
   max-height: 100vh;
+  overflow: hidden;
+  /* background-image: linear-gradient(#ffe2e2, #dcedc1); */
+  background-color: #fefcdb;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: "sigmar One";
   font-weight: 300;
   font-size: 20px;
+}
+
+.title {
+  font-family: "corp";
+  font-size: 3.5rem;
+  letter-spacing: 5px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #393e46;
+  width: 100%;
+  height: 100%;
 }
 
 h2 {
@@ -41,7 +57,6 @@ button {
 /*-- Custom styles --*/
 
 .wrapper {
-  margin-top: 1rem;
   max-width: 100%;
   display: flex;
   justify-content: center;
@@ -52,19 +67,32 @@ button {
   border-radius: 7px;
   margin-top: 2rem;
   overflow: scroll;
+  border: 6px solid #58dd99;
+}
+
+.container-img {
+  overflow: hidden;
+  max-width: 50%;
+}
+
+.battlescreen {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
 }
 
 .bar {
   border-radius: 5px;
   text-align: center;
   font-weight: 400;
-  background-color: #cbf1f5;
+  background-color: #fff0bc;
   width: 15rem;
   margin: 2rem;
+  border: 6px solid #e8d594;
 }
 
 .player-image {
-  background-color: white;
+  background-color: #fefcdb;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: 80%;
@@ -212,18 +240,15 @@ button {
   margin: 10px;
 }
 
-.end-message-wrapper {
-  background-color:
-}
-
 .end-message {
   border-radius: 5px;
   text-align: center;
   font-weight: 400;
-  background-color: #cbf1f5;
+  background-color: #fff0bc;
   width: 40rem;
   margin: 4rem;
   padding: 4rem;
+  border: 6px solid #e8d594;
 }
 
 /*-- Grid --*/
